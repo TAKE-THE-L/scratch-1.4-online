@@ -7,9 +7,14 @@
 <script src="squeak.js">
 </script>
 <script>
-window.onload = function() {SqueakJS.runSqueak("https://github.com/TAKE-THE-L/scratch-1.4-online/raw/refs/heads/main/Scratch1.4.0.7.image", squeakjs, { fullscreen: 1 });}
+ window.onload = function() {SqueakJS.runSqueak("https://github.com/TAKE-THE-L/scratch-1.4-online/raw/refs/heads/main/Scratch1.4.0.7.image", squeakjs, { fullscreen: 1 });}
 </script>
-<noscript>
-  Sorry JS isn't enabled or not supported :(<br />
-  You can still download it <a href="https://scratcharchive.naleksuh.com/?download=Scratch1.4.0.7.image">here</a>
-</noscript>
+<p id="noscript">
+ Running Scratch versions online requires JavaScript. If JavaScript is not available for you, you can still
+ <a href="https://github.com/TAKE-THE-L/scratch-1.4-online/raw/refs/heads/main/Scratch1.4.0.7.image">
+  download the image
+ </a>
+</p>
+<script>
+ document.getElementById("noscript").remove();
+</script>
